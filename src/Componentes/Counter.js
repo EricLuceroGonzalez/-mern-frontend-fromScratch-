@@ -9,13 +9,20 @@ class Counter extends Component {
     console.log("Im here!");
     this.setState({ valor: this.state.valor + 1 });
   }
+
+    //The second function:
+    decrementCounter =() => {
+        console.log("Im here!");
+        this.setState({ valor: this.state.valor - 1 });
+      }
   render() {
     return (
       <React.Fragment>
         <div style={{ backgroundColor: "rgba(202,202,202,0.75)" }}>
           <h3>{this.props.title}</h3>
-          <div>{this.state.valor}</div>
+          <div className='row'>{this.state.valor}</div>
           <Button onClick={this.incrementCounter}> + </Button>
+          <Button onClick={this.decrementCounter}> - </Button>
         </div>
       </React.Fragment>
     );
