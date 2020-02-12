@@ -5,8 +5,8 @@ class Counter extends Component {
   render() {
     return (
       <React.Fragment>
-        <div>
-          <h3>{this.props.title}}</h3>
+        <div style={{ backgroundColor: "rgba(202,202,202,0.75)" }}>
+          <h3>{this.props.title}</h3>
           <div>{this.state.valor}</div>
         </div>
       </React.Fragment>
