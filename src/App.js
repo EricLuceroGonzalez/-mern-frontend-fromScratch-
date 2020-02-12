@@ -1,10 +1,18 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import 'bootstrap/dist/css/bootstrap.min.css'
+import "./App.css";
+import Counters from "./Componentes/Counters";
 
 function App() {
   return (
-    <div className="App">
+    <div
+      style={{
+        margin: "70px auto",
+        boxShadow: "4px 6px 6px gray"
+      }}
+     className='col-8'>
       <p>Hello World</p>
+      <Counters></Counters>
     </div>
   );
 }
