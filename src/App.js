@@ -10,7 +10,7 @@ function App() {
         margin: "70px auto",
         boxShadow: "4px 6px 6px gray"
       }}
-     className='col-8'>
+     className='col-10'>
       <p>Hello World</p>
       <Counters></Counters>
     </div>

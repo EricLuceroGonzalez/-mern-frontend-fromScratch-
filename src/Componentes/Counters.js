@@ -12,6 +12,8 @@ class Counters extends Component {
       <div style={counterSty}>
         <h2>Counters Component</h2>
         <Counter title={"The props Title"} value={4}></Counter>
+        <Counter title={"Another counter component"} value={-4}></Counter>
+        <Counter title={"and another"} value={0}></Counter>
       </div>
     );
   }
