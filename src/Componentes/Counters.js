@@ -16,10 +16,22 @@ class Counters extends Component {
     ]
   };
 
+  // This function wil be executed from child component and will eliminate the Counter with that id (pass as parameter)
+  deleteCounter = id => {
+    const newCounter = this.state.contadores.filter(item => item.id !== id);
+    this.setState({ contadores: newCounter });
+  };
+
   renderCounters() {
     const allCounters = this.state.contadores.map((item, iKey) => {
       return (
-        <Counter key={item.id} title={item.title} value={item.value}></Counter>
+        <Counter
+          key={iKey}
+          id={item.id}
+          title={item.title}
+          value={item.value}
+          deleteThisOne={this.deleteCounter}
+        ></Counter>
       );
     });
     return allCounters;

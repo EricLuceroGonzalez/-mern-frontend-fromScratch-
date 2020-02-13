@@ -34,7 +34,7 @@ class Counter extends Component {
           style={{
             fontSize: "2em",
             background:
-              "linear-gradient(180deg, rgba(84,231,153,1) 40%, rgba(55,105,246,1) 100%, rgba(205,42,241,0.7455182756696428) 100%)",
+              "linear-gradient(170deg, rgba(14,254,118,1) 0%, rgba(38,240,160,0.8) 100%)",
             padding: "20px 12px",
             borderRadius: "14px",
             boxShadow: "2px 6px 10px gray",
@@ -59,7 +59,8 @@ class Counter extends Component {
             <Button
               color="success"
               className="ml-4"
-              onClick={() => this.props.eliminar(this.props.id)}
+              //onClick will excecute this function
+              onClick={() => this.props.deleteThisOne(this.props.id)}
             >
               Eliminar
             </Button>
