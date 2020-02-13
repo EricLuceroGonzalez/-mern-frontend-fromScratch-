@@ -39,7 +39,7 @@ class Counters extends Component {
   render() {
     return (
       <div style={counterSty}>
-        <h2>Counters Component</h2>
+        <h2>We have {this.state.contadores.length} Counters {this.state.contadores.length === 1 ? 'component' : 'components'}</h2>
         {this.renderCounters()}
       </div>
     );
